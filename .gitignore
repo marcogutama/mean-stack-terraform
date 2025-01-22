@@ -1,0 +1,20 @@
+# Archivos de estado de Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+
+# Archivos de variables que pueden contener información sensible
+*.tfvars
+!terraform.tfvars
+
+# Archivos de respaldo
+*.backup
+
+# Archivos de crash log
+crash.log
+
+# Archivos de override
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
