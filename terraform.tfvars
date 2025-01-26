@@ -1,9 +1,9 @@
-aws_region = "us-west-2"
-vpc_cidr = "10.0.0.0/16"
-public_subnets = ["10.0.1.0/24", "10.0.2.0/24"]
-private_subnets = ["10.0.3.0/24", "10.0.4.0/24"]
-app_instance_count = 2
-app_instance_type = "t2.micro"
+aws_region            = "us-east-1"
+vpc_cidr              = "10.0.0.0/16"
+public_subnets        = ["10.0.1.0/24", "10.0.2.0/24"]
+private_subnets       = ["10.0.3.0/24", "10.0.4.0/24"]
+app_instance_count    = 2
+app_instance_type     = "t2.micro"
 mongodb_instance_type = "t2.micro"
-app_ami = "ami-12345678" # Reemplazar con AMI real de Nginx + Node.js
-mongodb_ami = "ami-87654321" # Reemplazar con AMI real de MongoDB
+app_ami               = "ami-0764ed87e47544185" # Reemplazar con AMI real de Nginx + Node.js
+mongodb_ami           = "ami-007c930c7344fedcf"  # Reemplazar con AMI real de MongoDB

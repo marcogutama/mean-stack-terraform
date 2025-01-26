@@ -28,3 +28,10 @@ resource "aws_lb_listener" "app" {
     target_group_arn = aws_lb_target_group.app.arn
   }
 }
+
+resource "aws_lb_target_group_attachment" "app" {
+  count = length(var.app_instances)
+  target_group_arn = aws_lb_target_group.app.arn
+  target_id        = var.app_instances[count.index]
+  port             = 80
+}

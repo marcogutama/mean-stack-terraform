@@ -1,24 +1,24 @@
 output "app_public_ips" {
-  description = "Public IPs of application instances"
-  value = module.compute.app_public_ips
+  description = "IPs publicas de las instancias de la aplicacion (nginx + node)"
+  value       = module.compute.app_public_ips
 }
 
 output "app_private_ips" {
-  description = "Private IPs of application instances"
-  value = module.compute.app_private_ips
+  description = "IPs privadas de las instancias de la aplicacion (nginx + node)"
+  value       = module.compute.app_private_ips
 }
 
 output "mongodb_private_ip" {
-  description = "Private IP of MongoDB instance"
-  value = module.compute.mongodb_private_ip
+  description = "IP privada de la instancia de MongoDB"
+  value       = module.compute.mongodb_private_ip
 }
 
 output "alb_dns" {
-  description = "DNS name of the application load balancer"
-  value = module.loadbalancer.alb_dns
+  description = "Nombre DNS del balanceador de carga de la aplicacion"
+  value       = module.loadbalancer.alb_dns
 }
 
 output "nat_public_ip" {
-  description = "Public IP of the NAT Gateway"
-  value = module.nat.nat_public_ip
+  description = "IP publica del NAT Gateway"
+  value       = module.nat.nat_public_ip
 }
