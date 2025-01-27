@@ -1,8 +1,3 @@
-output "app_public_ips" {
-  description = "IPs publicas de las instancias de la aplicacion (nginx + node)"
-  value       = module.compute.app_public_ips
-}
-
 output "app_private_ips" {
   description = "IPs privadas de las instancias de la aplicacion (nginx + node)"
   value       = module.compute.app_private_ips

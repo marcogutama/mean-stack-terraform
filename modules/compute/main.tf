@@ -2,7 +2,7 @@ resource "aws_instance" "app" {
   count = var.app_instance_count
   ami = var.app_ami
   instance_type = var.app_instance_type
-  subnet_id = var.public_subnet_ids[count.index % length(var.public_subnet_ids)]
+  subnet_id = var.private_subnet_ids[count.index % length(var.private_subnet_ids)]
   vpc_security_group_ids = [var.app_security_group_id]
 
   tags = {
